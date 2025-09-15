@@ -13,7 +13,7 @@ namespace WindowsFormsApp1
 {
     public partial class Form1 : Form
     {
-        int clicks = 0;
+        int count = 0;
         public Form1()
         {
             InitializeComponent();
@@ -100,14 +100,14 @@ namespace WindowsFormsApp1
         {
             groupBox2.Visible = true;
             groupBox3.Visible = false;
-            clicks = 0;
+            count = 0;
             label5.Text = "0 - натискай нижче!";
         }
 
         private void button8_Click(object sender, EventArgs e)
         {
-            clicks += 1;
-            label5.Text = ($"Кліків: {Convert.ToString(clicks)}");
+            count += 1;
+            label5.Text = ($"Кліків: {Convert.ToString(count)}");
         }
     }
 }
